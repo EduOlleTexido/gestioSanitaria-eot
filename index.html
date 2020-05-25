@@ -26,7 +26,9 @@
     <script src="./js/classes/Pacient.js"></script>
    
   </head>
+
   <body>
+
     <!-- INICI container -->
     <div class="container">
       <h1  class="text-center mt-3 mb-3" >Aplicació gestió Sanitària</h1>
@@ -78,6 +80,8 @@
             <button type="button" id="btnGestMetges" class="btn btn-primary btn-block"  onClick="mostraGestioMetges()">Metges</button>
             <br>
             <button type="button" id="btnGestAplicacio" class="btn btn-primary btn-block"  onClick="mostraGestioApp()">Control</button>
+            <br>
+            <button type="button" id="btnCanVis" class="btn btn-primary btn-block" onClick="mostraCanvisVisuals()">Millores visuals</button>
             <!-- <button type="button" class="btn btn-primary  btn-block" data-toggle="modal" data-target="#espaiModal">Open modal</button> -->
         </div>
         <!-- FINAL COLUMNA 1 >md 02 < -- > bloc control equerre -->
@@ -139,7 +143,6 @@
             <div id="dadesPacient"></div>
             <div class="text-center">
               <button type="button" class="btn btn-primary mt-4" onClick="ingressarPacients()">Ingressar</button>
-              <button type="button" class="btn btn-primary mt-4" onClick="ocultaGestioPacients(this)">Torna</button>
             </div>
           </div>
           <!-- FINAL divPacients -->
@@ -156,12 +159,12 @@
           <!-- INICI divControls -->
           <div class="w-100 mx-auto align-items-center border mt-8 mb-8 p-4 rounded shadow bg-white  d-none" id="divControls">
             <!-- mt margin top = 8    mt margin bottom = 8 -->
+            <a href="#" class="close" data-dismiss="alert" aria-label="close" onClick="ocultaControls(this)" id="tancaDivHospital"><h3>&times;</h3></a>
             <h4  class="text-center mt-3 mb-3" >Control de l'aplicació</h4>
             <div class="form-row" id="formControls">
               <div class="text-center">
                 <button type="button" class="btn btn-primary mt-4" onClick="comprovacioInicial()" id="btnCheck">Check</button>
                 <button type="button" class="btn btn-primary mt-4" onClick="mostraNotFoud()" id="btnMostra404">Mostra error 404</button>
-                <button type="button" class="btn btn-primary mt-4" onClick="ocultaControls(this)">Torna</button>
               </div>
             </div>
             <div class="form-row" id="formControls">
@@ -172,6 +175,11 @@
           </div>
           <!-- FINAL divControls -->
         <!-- ------------------------------------------------------------------------------------ -->
+          <!-- ------------------------------------------------------------------------------------ -->
+            <!-- INICI divPacients -->
+            
+            <!-- FINAL divPacients -->
+          <!-- ------------------------------------------------------------------------------------ -->
         <!-- ==================================================================================== -->   
         </div>
         <!-- INICI COLUMNA 2 >md 10 < -- >  modul divPanellEscriptori -->
